@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Toolbox</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+    <meta charset="utf-8" />
+    <title>Journalism's toolbox</title>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+    <div id="wrapper">
+        <%#= render 'application/navigation' %>
+        <div id="page-wrapper" class="gray-bg">
+            <%#= render 'application/top' %>
+            <%#= render 'application/header' %>
+            <div class="wrapper wrapper-content animated fadeInUp">
+                <%#= render 'application/messages' %>
+                <%= yield %>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
