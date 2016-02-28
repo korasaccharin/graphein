@@ -15,3 +15,6 @@
 //= require slimscroll/jquery.slimscroll.min.js
 //= require inspinia/inspinia
 //= require toastr/toastr.min.js
+
+//= require_tree ./application/chartwell
+//= require application/initialize

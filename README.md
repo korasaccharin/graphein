@@ -10,3 +10,5 @@ https://public.tableau.com/s/gallery
 https://github.com/nnnick/Chart.js
 http://www.chartblocks.com/en/
 https://github.com/densitydesign/raw
+
+https://www.fontfont.com/fonts/chartwell
