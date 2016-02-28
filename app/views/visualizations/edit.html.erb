@@ -1,6 +1,8 @@
-<h1>Editing Visualization</h1>
+<% content_for :title, 'Editing Visualization' %>
+<% content_for :header do %><h1>Editing Visualization</h1><% end %>
+<% content_for :toolbar do %>
+    <li><%= link_to 'Visualizations', visualizations_path %></li>
+    <li><%= link_to 'Show', @visualization %></li>
+<% end %>
 
 <%= render 'form' %>
-
-<%= link_to 'Show', @visualization %> |
-<%= link_to 'Back', visualizations_path %>

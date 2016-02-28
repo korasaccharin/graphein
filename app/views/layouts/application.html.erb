@@ -10,12 +10,14 @@
 </head>
 <body>
     <div id="wrapper">
-        <%#= render 'application/navigation' %>
+        <%= render 'application/navigation' %>
+
         <div id="page-wrapper" class="gray-bg">
-            <%#= render 'application/top' %>
-            <%#= render 'application/header' %>
+            <%= render 'application/top' %>
+            <%= render 'application/header' %>
+
             <div class="wrapper wrapper-content animated fadeInUp">
-                <%#= render 'application/messages' %>
+                <%= render 'application/messages' %>
                 <%= yield %>
             </div>
         </div>

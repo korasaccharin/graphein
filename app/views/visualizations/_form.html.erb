@@ -1,21 +1,9 @@
-<%= form_for(@visualization) do |f| %>
-  <% if @visualization.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@visualization.errors.count, "error") %> prohibited this visualization from being saved:</h2>
+<%= simple_form_for @visualization, html: { class: 'form-horizontal' } do |f| %>
+    <%= f.error_notification %>
 
-      <ul>
-      <% @visualization.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+    <div class="form-inputs">
+        <div class="form-group"><%= f.input :name, input_html: { class: 'form-control' } %></div>
     </div>
-  <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <div class="form-actions"><%= f.button :submit, class: 'btn btn-default' %></div>
 <% end %>
