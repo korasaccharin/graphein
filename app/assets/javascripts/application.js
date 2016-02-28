@@ -16,5 +16,6 @@
 //= require inspinia/inspinia
 //= require toastr/toastr.min.js
 
+//= require d3-dsv/d3-dsv
 //= require_tree ./application/chartwell
 //= require application/initialize
