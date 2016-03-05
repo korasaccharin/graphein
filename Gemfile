@@ -40,4 +40,5 @@ end
 group :production do
   gem 'postgresql'
   gem 'rails_12factor'
+  gem 'puma'                                  # Webserver
 end
