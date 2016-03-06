@@ -1,0 +1,1 @@
+SimpleNavigation.register_renderer bar_renderer: BarRenderer
