@@ -1,0 +1,5 @@
+<% content_for :title, 'New User' %>
+<% content_for :header do %><h1>New User</h1><% end %>
+<% content_for :toolbar do %><li><%= link_to 'Users', users_path %></li><% end %>
+
+<%= render 'form' %>
