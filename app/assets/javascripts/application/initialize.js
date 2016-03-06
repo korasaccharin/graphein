@@ -1,7 +1,7 @@
 (function (window, $) {
 
     $(document).ready(function() {
-        FFChartwell();
+        // FFChartwell();
 
         var table = $('table.formatting'),
             tbody = $('tbody', table),
@@ -11,6 +11,8 @@
             var string = this.value;
             var data   = d3_dsv.csvParse(string);
 
+            thead.empty();
+            tbody.empty();
             table.removeClass ('hidden');
 
             thead.append('<tr></tr>');
