@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   resources :visualizations
   resources :users
 
-  root 'visualizations#index'
+  root 'pages#dashboard'
 end
