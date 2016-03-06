@@ -10,6 +10,7 @@
 
 class VisualizationsController < ApplicationController
   before_action :set_visualization, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /visualizations
   # GET /visualizations.json
