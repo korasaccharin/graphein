@@ -1,0 +1,22 @@
+default: &default
+  adapter: sqlite3
+  pool   : 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: db/development.sqlite3
+
+test:
+  <<: *default
+  database: db/test.sqlite3
+
+production:
+  adapter : postgresql
+  host    : DATABASE_HOST
+  encoding: unicode
+  database: DATABASE_NAME
+  port    : 5432
+  pool    : 5
+  username: DATABASE_USERNAME
+  password: DATABASE_PASSWORD
