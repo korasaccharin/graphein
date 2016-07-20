@@ -1,0 +1,9 @@
+<%= simple_form_for @user do |f| %>
+    <%= f.error_notification %>
+
+    <div class="form-group"><%= f.input :email, input_html: { class: 'form-control' } %></div>
+    <div class="form-group"><%= f.input :firstname, input_html: { class: 'form-control' } %></div>
+    <div class="form-group"><%= f.input :lastname, input_html: { class: 'form-control' } %></div>
+
+    <div class="form-actions"><%= f.button :submit, class: 'btn btn-default' %></div>
+<% end %>
