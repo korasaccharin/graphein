@@ -1,5 +1,6 @@
 class VisualizationsController < ApplicationController
   before_action :set_visualization, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /visualizations
   # GET /visualizations.json
@@ -25,6 +26,7 @@ class VisualizationsController < ApplicationController
   # POST /visualizations.json
   def create
     @visualization = Visualization.new(visualization_params)
+    @visualization.created_by_id = current_user.id
 
     respond_to do |format|
       if @visualization.save
