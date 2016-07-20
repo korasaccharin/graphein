@@ -1,0 +1,7 @@
+fr:
+  activerecord:
+    models:
+      visualization: visualisation
+    attributes:
+      visualization:
+        name: "Nom"
