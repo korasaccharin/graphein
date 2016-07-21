@@ -1,3 +1,3 @@
-# Journalism graphics
+# Graphein
 
 
