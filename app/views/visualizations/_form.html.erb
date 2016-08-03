@@ -1,4 +1,4 @@
-<%= form_for(visualization) do |f| %>
+<%= simple_form_for visualization do |f| %>
   <% if visualization.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(visualization.errors.count, "error") %> prohibited this visualization from being saved:</h2>
@@ -12,8 +12,11 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.input :name %>
+  </div>
+
+  <div class="field">
+    <%= f.input :style, collection: Visualization::STYLES, include_blank: false %>
   </div>
 
   <div class="actions">

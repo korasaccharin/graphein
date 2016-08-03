@@ -5,5 +5,7 @@
   <%= @visualization.name %>
 </p>
 
+<canvas id="myChart" width="400" height="400" data-style="<%= @visualization.style %>"></canvas>
+
 <%= link_to 'Edit', edit_visualization_path(@visualization) %> |
 <%= link_to 'Back', visualizations_path %>

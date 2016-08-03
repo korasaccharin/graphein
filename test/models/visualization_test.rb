@@ -7,6 +7,8 @@
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
 #  created_by_id :integer
+#  data          :text
+#  style         :string
 #
 
 require 'test_helper'
