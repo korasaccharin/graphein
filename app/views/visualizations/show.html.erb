@@ -5,6 +5,10 @@
   <%= @visualization.name %>
 </p>
 
+<script type="application/javascript">
+    var data = '<%= raw @visualization.data.as_json %>';
+</script>
+
 <canvas id="myChart" width="400" height="400" data-style="<%= @visualization.style %>"></canvas>
 
 <%= link_to 'Edit', edit_visualization_path(@visualization) %> |
